@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Final Project
+Icon=com.github.arshubham.final-project
+Exec=com.github.arshubham.final-project
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Utility;Settings;
+Keywords=Icons;Iconpack;DesktopSettings;
