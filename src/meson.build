@@ -10,6 +10,7 @@ sources = files(
     'views/HomeView.vala',
     'views/TestView.vala',
     'views/PackageView.vala',
+    'views/TView.vala',
 
     'Application.vala',
     'Main.vala',

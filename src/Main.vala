@@ -20,7 +20,6 @@
  */
 
 public static void main (string [] args) {
-
     var app = new App.Application ();
     app.run (args);
 }

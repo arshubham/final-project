@@ -29,7 +29,7 @@ namespace App.Views {
         private Gtk.HeaderBar headerbar;
         public Granite.Widgets.ModeButton view_mode;
         private App.Views.HomeView home_view;
-        private App.Views.TestView test_view;
+        private App.Views.TView test_view;
         private App.Views.PackageView package_view;
         public Gtk.Stack content;
 
@@ -96,7 +96,7 @@ namespace App.Views {
             content.hhomogeneous = true;
             content.vhomogeneous = true;
             home_view = new HomeView ();
-            test_view = new TestView ();
+            test_view = new TView ();
             package_view = new PackageView ();
             content.add_named (home_view, "home");
             content.add_named (test_view, "test");
