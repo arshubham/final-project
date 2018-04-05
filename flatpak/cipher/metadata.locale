@@ -1,0 +1,5 @@
+[Runtime]
+name=com.github.arshubham.cipher.Locale
+
+[ExtensionOf]
+ref=app/com.github.arshubham.cipher/x86_64/master

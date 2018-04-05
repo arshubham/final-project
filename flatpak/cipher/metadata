@@ -1,0 +1,14 @@
+[Application]
+name=com.github.arshubham.cipher
+runtime=org.gnome.Platform/x86_64/3.24
+sdk=org.gnome.Sdk/x86_64/3.24
+command=com.github.arshubham.cipher
+
+[Context]
+shared=ipc;
+sockets=x11;wayland;
+
+[Extension com.github.arshubham.cipher.Locale]
+directory=share/runtime/locale
+autodelete=true
+locale-subset=true
