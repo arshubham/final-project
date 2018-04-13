@@ -94,7 +94,9 @@ namespace App.Views {
         });       
 
 build.clicked.connect (() => {
+terminal_view.buffer.text = "Building Flatpak.......";
       try {
+      
          int exitCode;
          string std_out;
          string cmd = "flatpak-builder --force-clean  --repo=cipher-repo /home/shubhamarora/Projects/final-project/flatpak/cipher /home/shubhamarora/Projects/final-project/flatpak/cipher.json";
@@ -109,13 +111,15 @@ build.clicked.connect (() => {
       });  
       
       repo.clicked.connect (() => {
+            terminal_view.buffer.text = "Creating Repo.......";
+            terminal_view.buffer.text = "Creating Repo.......";
             try {
                int exitCode;
                string std_out;
                string cmd = "flatpak --user remote-add --no-gpg-verify --if-not-exists cipher-repo /home/shubhamarora/Projects/final-project/flatpak/cipher-repo";
                Process.spawn_command_line_sync(cmd, out std_out, null, out exitCode);
                stdout.printf (std_out);
-               terminal_view.buffer.text = std_out;
+               //terminal_view.buffer.text = std_out;
                 }
                 catch (Error e){
         stdout.printf (e.message);
@@ -124,10 +128,12 @@ build.clicked.connect (() => {
             }); 
             
             install.clicked.connect (() => {
+            terminal_view.buffer.text = "Installing.......";
+            Posix.sleep (2);
                   try {
                      int exitCode;
                      string std_out;
-                     string cmd = "flatpak --user install /home/shubhamarora/Projects/final-project/cipher-repo con.github.arshubham.cipher";
+                     string cmd = "flatpak --user install /home/shubhamarora/cipher-repo com.github.arshubham.cipher";
                      Process.spawn_command_line_sync(cmd, out std_out, null, out exitCode);
                      stdout.printf (std_out);
                      terminal_view.buffer.text = std_out;

@@ -2,9 +2,9 @@
   "id" : "com.github.arshubham.cipher",
   "runtime" : "org.gnome.Platform",
   "runtime-version" : "3.24",
-  "runtime-commit" : "77ce203ee9ff0a7467653eab02cd622073de555be099a1beee1b28973c234588",
+  "runtime-commit" : "60156aba948349e760bb1135cf78103dced0eb29ce323d801c26dab035c2c5f3",
   "sdk" : "org.gnome.Sdk",
-  "sdk-commit" : "fffb0598ea6bf3e880b9af0e8cd80c899f8b961cb7f5f4759eb1b0ecb15477e3",
+  "sdk-commit" : "d45658d31ba9e84c85b78b9d51a28b223a341effe2dbd62df2de6b5e865658d1",
   "build-options" : {
     "cflags" : "-O2",
     "cxxflags" : "-O2"
